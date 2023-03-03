@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AmazonAutomation" parallel="tests" thread-count="2">
+    <test name="ChromeTesting" >
+        <parameter name="browserType" value="chrome"></parameter>
+        <parameter name="webUrl" value="https://www.amazon.com/"></parameter>
+        <classes>
+            <class name="HomePage" />
+            <class name="SearchPage" />
+            <class name="ProductPage"/>
+            <class name="CartPage" />
+            <class name="AccountPage">
+                <parameter name="sampleName" value="sample name"></parameter>
+                <parameter name="sampleEmail" value="samplemail@gmail.com"></parameter>
+                <parameter name="samplePassword" value="samplepassword"></parameter>
+            </class>
+        </classes>
+    </test>
+   <test name="FirefoxTesting" >
+       <parameter name="browserType" value="firefox"></parameter>
+       <parameter name="webUrl" value="https://www.amazon.com/"></parameter>
+       <classes>
+           <class name="HomePage" />
+           <class name="SearchPage" />
+           <class name="ProductPage"/>
+           <class name="CartPage" />
+           <class name="AccountPage">
+               <parameter name="sampleName" value="sample name"></parameter>
+               <parameter name="sampleEmail" value="samplemail@gmail.com"></parameter>
+               <parameter name="samplePassword" value="samplepassword"></parameter>
+           </class>
+       </classes>
+   </test>
+</suite>

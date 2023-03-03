@@ -1,0 +1,7 @@
+.idea
+drivers/chromedriver.exe
+drivers/chromedriver2.exe
+drivers/geckodriver.exe
+drivers/edgedriver.exe
+drivers/edgedriver2.exe
+drivers/edgedriver3.exe
